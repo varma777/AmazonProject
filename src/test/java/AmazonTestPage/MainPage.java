@@ -22,7 +22,9 @@ public class MainPage {
 	landingpage.Goto();
 	landingpage.MoveTo();
 	driver.findElement(By.xpath("//div[@class='layoutToolbarPadding']//a[2]//div//span")).click();        
-				
+	driver.findElement(By.cssSelector("input[name='email']")).sendKeys("9866412795");
+	driver.findElement(By.xpath("//div[@class='a-section']//span[@id='continue']")).click();
+	driver.findElement(By.xpath("//div[@class='a-section a-spacing-large']//input")).sendKeys("Varma@123");
 		
 	}
 
