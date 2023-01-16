@@ -18,11 +18,10 @@ public class LandingPage {
 	}
 	public void MoveTo() {	
     Actions a = new Actions(driver);
-    a.moveToElement(driver.findElement(By.xpath("//div[@class='layoutToolbarPadding']/child::a[1]/child::span"))).build().perform();         
-		
+    a.moveToElement(driver.findElement(By.xpath("//div[@class='layoutToolbarPadding']/child::a[1]/child::span"))).build().perform();
+    
+    
 	}
 	
 	
-
-
 }
