@@ -1,10 +1,10 @@
 package Amazon;
 
-public class AbstractComponent {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
+public class AbstractComponent{
+	
+      public static void main(String[]args) {
+	 
+	 
+ }
 
 }
