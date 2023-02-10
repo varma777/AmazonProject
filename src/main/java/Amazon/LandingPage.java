@@ -1,5 +1,4 @@
 package Amazon;
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -17,30 +16,34 @@ public class LandingPage {
 		this.driver= driver;
 	PageFactory.initElements(driver, this);
 	}
-	
 	@FindBy(xpath = "//div[@class='nav-line-1-container']")
 	WebElement click;
 	
-	public void Goto() {	
+	@FindBy(xpath="//div[@class='a-row a-spacing-base']//label/following-sibling::input")
+	WebElement enter;
+	
+	public void Goto() {
 	driver.manage().window().maximize();
     driver.get("https://www.amazon.com/");	
 	}
+	
 	public void MoveTo() {	
     Actions a = new Actions(driver);
     a.moveToElement(driver.findElement(By.xpath("//div[@class='layoutToolbarPadding']/child::a[1]/child::span"))).build().perform();
-    
 	}
+	
 	@SuppressWarnings("deprecation")
 	public void implecitWait() {
 	driver.manage().timeouts().implicitlyWait(2000,TimeUnit.SECONDS);				
 	}
+	
 	public void click() {
 	   click.click();	
 	}
+    public void login (String Email, String password) { 
+	   enter.sendKeys(Email);
+	   	  
+      }
 	
-	
-	
-	
-	
-	
+		
 }
