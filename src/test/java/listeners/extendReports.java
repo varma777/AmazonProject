@@ -10,12 +10,12 @@ public class extendReports {
 	 String path = System.getProperty("users.dir")+"ExtentReport//report.html";
 
 	 ExtentSparkReporter reporter = new ExtentSparkReporter(path);
-	 reporter.config().setReportName("QA BUNNY REPORT");
+	 reporter.config().setReportName("QA Vinecnt REPORT");
 	 reporter.config().setDocumentTitle("AMAZON AUTOMATON TESTING");
 	 
 	 ExtentReports extent = new  ExtentReports();
 	 extent.attachReporter(reporter);
-	 extent.setSystemInfo("BUNNY", "AMAZON-COMMERCE");
+	 extent.setSystemInfo("Vincent", "AMAZON-COMMERCE");
 	 return extent;
 	 
 	}
