@@ -17,6 +17,7 @@ public class extendReports {
 	 extent.attachReporter(reporter);
 	 extent.setSystemInfo("BUNNY", "AMAZON-COMMERCE");
 	 return extent;
+	 
 	}
 
 }
